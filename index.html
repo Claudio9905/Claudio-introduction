@@ -3,71 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La mia pagina</title>
-</head>
-<body style="background-color: darkslategray;">
+    <title>La mia Presentazione</title>
 
-    <div style=
-        "background-color: rgb(42, 106, 75);
-        width: 700px;
-        max-width: 850px;
-        min-width: 150px;
-        margin: auto;
-        padding: 20px;">
-        
-        
-        <h1 style="text-align: center;
-        padding: 20px;
-        font-size: 50px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Presentazione</h1>
+    <style>
 
-        <p style="font-size: 20px;
-                  font-family: Arial, Helvetica, sans-serif;
-                  ">
-                Ciao, mi presento, mi chiamo Claudio Postiglione e ho 25 anni. Ho fatto nuoto per 10 anni, ho frequentato il Liceo Scientifico alle superiori uscendo con una votazione 86/100.
-                Ora sto per affrontare un corso che mi darà una svolta nella mia vita ossia quello di <strong>EPICODE</strong>, il corso <strong>FULL STACK DEVELOPMENT!</strong> 
-
-        </p>
-        <img src="IO.jpg" alt="Una mia foto"
-            style="width: 170px;
-            float: left;
-            margin: 15px;
-            padding: 20px">
-        
-        <p style="margin: 20px;
-                  padding: 20px;  
-                  ">
-
-            <h3 style="font-size: 30px;">I miei hobby e i miei interessi:</h3>
-            <ul style="font-size: 20px;">
-                <li>Fan del cinema</li>
-                <li>Videogiocare con il pc</li>
-                <li>Imparare a programmare</li>
-                <li>Mi piace disegnare</li>
-                <li>Visitare il Giappone</li>
-            </ul>
-        </p> 
-    </div>
-
-        <div style=
-            "background-color: rgb(237, 216, 190);
-             margin-top: 20px;
-             margin-left: 95px;
-             width: 300px;
-             padding: 20px;">
+        body{
+            background-color: lightskyblue;
+            background-image: url('https://wallpapers.com/images/hd/simple-powerpoint-background-qcjfj733v4lawos5.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-width: 150px;
             
-            <h3>Qui ci sono i miei contatti:</h3>
-            <ul>
-                <li>cloudpost10@gmail.com</li>
-                <li>3349963080</li>
-                <li>
-                    <a href="https://www.instagram.com/claudio_postiglione99/#">Instagram</a>
-                </li>
-            </ul>
+        }
+
+        .titolo{
+            background-color: darkblue;
+            min-width: 150px;
+            max-width: auto;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            border: 2px solid silver;
+            box-shadow: 2px 2px 1px black;
+        }
+
+        .io{
+            min-width: 100px;
+            max-width: 150px;
+            float: left;
+            margin-top: 30px;
+            margin-right: 10px;
+            border-radius: 20px;
+            border: 2px solid silver;
+            box-shadow: 1px 1px 1px black;
+        }
+
+
+        p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .secondo-titolo{
+            background-color:darkcyan;
+            min-width: 150px;
+            float: right;
+            box-shadow: 1px 1px 1px 1px;
+            margin-left: 2px;
+            margin-right: 400px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 4px;
+            border-radius: 3px;
+        }
+
+        h2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        
+        }
+
+        h3{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: darkcyan;
+            color: black;
+            width: 150px;
+            border-radius: 3px;
+            box-shadow: 1px 1px 1px 1px;
+            padding: 2px;
+            margin-top: 30px;
+            margin-bottom: 2px;
+        }
+
+        table{
+            border: 1;
+            background-color:lightskyblue;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 5px;
+            color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="main-page">
+
+        <div class="intro">
+
+            <div  class="titolo">
+
+                <h1>Presentazione</h1>
+                
+            </div>
+            
+            <img class="io" src="IO.jpg" alt="Sono io nell'immagine">
+            <p style="color: aliceblue;">
+                Ciao, mi chiamo Claudio, piacere di conoscerti!
+                Qui condivido i miei dati e le mie esperienze personali.
+            </p>
+
+        </div>
+
+
+        <div class="esp-int">
+
+            <div class="secondo-titolo">
+                <h2>Esperienze ed interessi</h2>
+            </div>
+
+            <table>
+                <tr>
+                    <td>Diploma di scuola superiore, Liceo Scientifico 'Carlo Urbani', con voto 86/100 (Anni : 2013-2018)</td>
+                </tr>
+                <tr>
+                    <td>Ho praticato nuoto per almeno 10 anni nel centro sportivo 'Centro Ester' a Barra(NA)</td>
+                </tr>
+                <tr>
+                    <td>
+                        Sto frequentando l'Università della Federico II con indirizzo Ingegneria Informatica (ma per ora mi sono fermato)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alcuni dei miei hobby sono: giocare con il pc agli strategici come genere videoludico, sono un fan del cinema, e mi piace disegnare</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Sono tanto interessato a visitare il Giappone
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Interessato ad intrapredere un altro sport tipo il tennis
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+
+        <div class="dati-personali">
+
+            <h3>Dati personali:</h3>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cognome</th>
+                    <th>Età</th>
+                    <th>email</th>
+                    <th>num. cellulare</th>
+                    <th>social (Instagram)</th>
+                </tr>
+                <tr>
+                    <td>Claudio</td>
+                    <td>Postiglione</td>
+                    <td>25</td>
+                    <td>cloudpost10@gmail.com</td>
+                    <td>3349963080</td>
+                    <td>
+                        <a target="_blank" href="https://www.instagram.com/claudio_postiglione99/#">claudio_postiglione99</a>
+                    </td>
+                </tr>
+            </table>
             
         </div>
-        
 
-    
+    </div>
+
+
 </body>
 </html>
